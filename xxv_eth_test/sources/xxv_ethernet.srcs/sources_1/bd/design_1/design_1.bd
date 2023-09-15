@@ -1,0 +1,742 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xEBDB8C9E9F86B9B9",
+      "device": "xczu29dr-ffvf1760-2-i",
+      "gen_directory": "../../../../xxv_ethernet.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2022.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "xxv_ethernet_0": ""
+    },
+    "interface_ports": {
+      "axis_rx_0_0": {
+        "mode": "Master",
+        "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+        "vlnv": "xilinx.com:interface:axis_rtl:1.0",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "design_1_rx_core_clk_0_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "390625000"
+          },
+          "HAS_TKEEP": {
+            "value": "1",
+            "value_src": "auto_prop"
+          },
+          "HAS_TLAST": {
+            "value": "1",
+            "value_src": "auto_prop"
+          },
+          "HAS_TREADY": {
+            "value": "0",
+            "value_src": "const_prop"
+          },
+          "HAS_TSTRB": {
+            "value": "0",
+            "value_src": "const_prop"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0"
+          },
+          "TDATA_NUM_BYTES": {
+            "value": "8",
+            "value_src": "auto_prop"
+          },
+          "TDEST_WIDTH": {
+            "value": "0",
+            "value_src": "const_prop"
+          },
+          "TID_WIDTH": {
+            "value": "0",
+            "value_src": "const_prop"
+          },
+          "TUSER_WIDTH": {
+            "value": "1",
+            "value_src": "auto_prop"
+          }
+        }
+      },
+      "axis_tx_0_0": {
+        "mode": "Slave",
+        "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+        "vlnv": "xilinx.com:interface:axis_rtl:1.0",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "design_1_xxv_ethernet_0_0_tx_clk_out_0",
+            "value_src": "default_prop"
+          },
+          "FREQ_HZ": {
+            "value": "390625000",
+            "value_src": "user_prop"
+          },
+          "HAS_TKEEP": {
+            "value": "1"
+          },
+          "HAS_TLAST": {
+            "value": "1"
+          },
+          "HAS_TREADY": {
+            "value": "1"
+          },
+          "HAS_TSTRB": {
+            "value": "0"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "LAYERED_METADATA": {
+            "value": "undef"
+          },
+          "PHASE": {
+            "value": "0",
+            "value_src": "user_prop"
+          },
+          "TDATA_NUM_BYTES": {
+            "value": "8"
+          },
+          "TDEST_WIDTH": {
+            "value": "0"
+          },
+          "TID_WIDTH": {
+            "value": "0"
+          },
+          "TUSER_WIDTH": {
+            "value": "1"
+          }
+        }
+      },
+      "ctl_rx_0_0": {
+        "mode": "Slave",
+        "vlnv_bus_definition": "xilinx.com:display_xxv_ethernet:ctrl_ports_int:2.0",
+        "vlnv": "xilinx.com:display_xxv_ethernet:ctrl_ports:2.0"
+      },
+      "ctl_tx_0_0": {
+        "mode": "Slave",
+        "vlnv_bus_definition": "xilinx.com:display_xxv_ethernet:ctrl_ports_int:2.0",
+        "vlnv": "xilinx.com:display_xxv_ethernet:ctrl_ports:2.0"
+      },
+      "gt_ref_clk_0": {
+        "mode": "Slave",
+        "vlnv_bus_definition": "xilinx.com:interface:diff_clock:1.0",
+        "vlnv": "xilinx.com:interface:diff_clock_rtl:1.0",
+        "parameters": {
+          "CAN_DEBUG": {
+            "value": "false",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "195312500"
+          }
+        }
+      },
+      "gt_rx_0": {
+        "mode": "Slave",
+        "vlnv_bus_definition": "xilinx.com:display_xxv_ethernet:gt_ports_int:2.0",
+        "vlnv": "xilinx.com:display_xxv_ethernet:gt_ports:2.0"
+      },
+      "gt_tx_0": {
+        "mode": "Master",
+        "vlnv_bus_definition": "xilinx.com:display_xxv_ethernet:gt_ports_int:2.0",
+        "vlnv": "xilinx.com:display_xxv_ethernet:gt_ports:2.0"
+      },
+      "ptp_2step_ctl_if_0_0": {
+        "mode": "Slave",
+        "vlnv_bus_definition": "xilinx.com:display_xxv_ethernet:ctrl_ports_int:2.0",
+        "vlnv": "xilinx.com:display_xxv_ethernet:ctrl_ports:2.0"
+      },
+      "ptp_2step_usrif_0_0": {
+        "mode": "Slave",
+        "vlnv_bus_definition": "xilinx.com:display_xxv_ethernet:user_ports_int:2.0",
+        "vlnv": "xilinx.com:display_xxv_ethernet:user_int_ports:2.0"
+      },
+      "ptp_stat_if_0_0": {
+        "mode": "Master",
+        "vlnv_bus_definition": "xilinx.com:display_xxv_ethernet:statistics_ports_int:2.0",
+        "vlnv": "xilinx.com:display_xxv_ethernet:statistics_ports:2.0"
+      },
+      "stat_rx_0_0": {
+        "mode": "Master",
+        "vlnv_bus_definition": "xilinx.com:display_xxv_ethernet:statistics_ports_int:2.0",
+        "vlnv": "xilinx.com:display_xxv_ethernet:statistics_ports:2.0"
+      },
+      "stat_tx_0_0": {
+        "mode": "Master",
+        "vlnv_bus_definition": "xilinx.com:display_xxv_ethernet:statistics_ports_int:2.0",
+        "vlnv": "xilinx.com:display_xxv_ethernet:statistics_ports:2.0"
+      }
+    },
+    "ports": {
+      "dclk_0": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "ASSOCIATED_RESET": {
+            "value": "sys_reset_0",
+            "value_src": "default"
+          },
+          "CLK_DOMAIN": {
+            "value": "design_1_dclk_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "gt_loopback_in_0_0": {
+        "direction": "I",
+        "left": "2",
+        "right": "0"
+      },
+      "gt_refclk_out_0": {
+        "type": "clk",
+        "direction": "O",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "design_1_xxv_ethernet_0_0_gt_refclk_out",
+            "value_src": "default_prop"
+          },
+          "FREQ_HZ": {
+            "value": "195312500",
+            "value_src": "user_prop"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0",
+            "value_src": "user_prop"
+          }
+        }
+      },
+      "gtpowergood_out_0_0": {
+        "direction": "O"
+      },
+      "gtwiz_reset_rx_datapath_0_0": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_HIGH"
+          }
+        }
+      },
+      "gtwiz_reset_tx_datapath_0_0": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_HIGH"
+          }
+        }
+      },
+      "qpllreset_in_0_0": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_HIGH"
+          }
+        }
+      },
+      "rx_clk_out_0_0": {
+        "type": "clk",
+        "direction": "O",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "design_1_xxv_ethernet_0_0_rx_clk_out_0",
+            "value_src": "default_prop"
+          },
+          "FREQ_HZ": {
+            "value": "390625000",
+            "value_src": "user_prop"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0",
+            "value_src": "user_prop"
+          }
+        }
+      },
+      "rx_core_clk_0_0": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "ASSOCIATED_BUSIF": {
+            "value": "axis_rx_0_0",
+            "value_src": "default"
+          },
+          "CLK_DOMAIN": {
+            "value": "design_1_rx_core_clk_0_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "390625000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0"
+          }
+        }
+      },
+      "rx_period_ns_0_0": {
+        "direction": "O",
+        "left": "63",
+        "right": "0"
+      },
+      "rx_preambleout_0_0": {
+        "direction": "O",
+        "left": "55",
+        "right": "0"
+      },
+      "rx_reset_0_0": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_HIGH"
+          }
+        }
+      },
+      "rxoutclksel_in_0_0": {
+        "direction": "I",
+        "left": "2",
+        "right": "0"
+      },
+      "rxrecclkout_0_0": {
+        "type": "clk",
+        "direction": "O",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "design_1_xxv_ethernet_0_0_rxrecclkout_0",
+            "value_src": "default_prop"
+          },
+          "FREQ_HZ": {
+            "value": "390625000",
+            "value_src": "user_prop"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0",
+            "value_src": "user_prop"
+          }
+        }
+      },
+      "stat_rx_status_0_0": {
+        "direction": "O"
+      },
+      "sys_reset_0": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_HIGH"
+          }
+        }
+      },
+      "tx_clk_out_0_0": {
+        "type": "clk",
+        "direction": "O",
+        "parameters": {
+          "ASSOCIATED_BUSIF": {
+            "value": "axis_tx_0_0",
+            "value_src": "default"
+          },
+          "CLK_DOMAIN": {
+            "value": "design_1_xxv_ethernet_0_0_tx_clk_out_0",
+            "value_src": "default_prop"
+          },
+          "FREQ_HZ": {
+            "value": "390625000",
+            "value_src": "user_prop"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0",
+            "value_src": "user_prop"
+          }
+        }
+      },
+      "tx_period_ns_0_0": {
+        "direction": "O",
+        "left": "63",
+        "right": "0"
+      },
+      "tx_preamblein_0_0": {
+        "direction": "I",
+        "left": "55",
+        "right": "0"
+      },
+      "tx_reset_0_0": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_HIGH"
+          }
+        }
+      },
+      "tx_unfout_0_0": {
+        "direction": "O"
+      },
+      "txoutclksel_in_0_0": {
+        "direction": "I",
+        "left": "2",
+        "right": "0"
+      },
+      "user_rx_reset_0_0": {
+        "type": "rst",
+        "direction": "O",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_HIGH",
+            "value_src": "const_prop"
+          }
+        }
+      },
+      "user_tx_reset_0_0": {
+        "type": "rst",
+        "direction": "O",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_HIGH",
+            "value_src": "const_prop"
+          }
+        }
+      }
+    },
+    "components": {
+      "xxv_ethernet_0": {
+        "vlnv": "xilinx.com:ip:xxv_ethernet:4.1",
+        "xci_name": "design_1_xxv_ethernet_0_0",
+        "xci_path": "ip\\design_1_xxv_ethernet_0_0\\design_1_xxv_ethernet_0_0.xci",
+        "inst_hier_path": "xxv_ethernet_0",
+        "parameters": {
+          "BASE_R_KR": {
+            "value": "BASE-R"
+          },
+          "ENABLE_TIME_STAMPING": {
+            "value": "1"
+          },
+          "GT_REF_CLK_FREQ": {
+            "value": "195.3125"
+          }
+        }
+      }
+    },
+    "interface_nets": {
+      "axis_tx_0_0_1": {
+        "interface_ports": [
+          "axis_tx_0_0",
+          "xxv_ethernet_0/axis_tx_0"
+        ]
+      },
+      "ctl_rx_0_0_1": {
+        "interface_ports": [
+          "ctl_rx_0_0",
+          "xxv_ethernet_0/ctl_rx_0"
+        ]
+      },
+      "ctl_tx_0_0_1": {
+        "interface_ports": [
+          "ctl_tx_0_0",
+          "xxv_ethernet_0/ctl_tx_0"
+        ]
+      },
+      "gt_ref_clk_0_1": {
+        "interface_ports": [
+          "gt_ref_clk_0",
+          "xxv_ethernet_0/gt_ref_clk"
+        ]
+      },
+      "gt_rx_0_1": {
+        "interface_ports": [
+          "gt_rx_0",
+          "xxv_ethernet_0/gt_rx"
+        ]
+      },
+      "ptp_2step_ctl_if_0_0_1": {
+        "interface_ports": [
+          "ptp_2step_ctl_if_0_0",
+          "xxv_ethernet_0/ptp_2step_ctl_if_0"
+        ]
+      },
+      "ptp_2step_usrif_0_0_1": {
+        "interface_ports": [
+          "ptp_2step_usrif_0_0",
+          "xxv_ethernet_0/ptp_2step_usrif_0"
+        ]
+      },
+      "xxv_ethernet_0_axis_rx_0": {
+        "interface_ports": [
+          "axis_rx_0_0",
+          "xxv_ethernet_0/axis_rx_0"
+        ]
+      },
+      "xxv_ethernet_0_gt_tx": {
+        "interface_ports": [
+          "gt_tx_0",
+          "xxv_ethernet_0/gt_tx"
+        ]
+      },
+      "xxv_ethernet_0_ptp_stat_if_0": {
+        "interface_ports": [
+          "ptp_stat_if_0_0",
+          "xxv_ethernet_0/ptp_stat_if_0"
+        ]
+      },
+      "xxv_ethernet_0_stat_rx_0": {
+        "interface_ports": [
+          "stat_rx_0_0",
+          "xxv_ethernet_0/stat_rx_0"
+        ]
+      },
+      "xxv_ethernet_0_stat_tx_0": {
+        "interface_ports": [
+          "stat_tx_0_0",
+          "xxv_ethernet_0/stat_tx_0"
+        ]
+      }
+    },
+    "nets": {
+      "dclk_0_1": {
+        "ports": [
+          "dclk_0",
+          "xxv_ethernet_0/dclk"
+        ]
+      },
+      "gt_loopback_in_0_0_1": {
+        "ports": [
+          "gt_loopback_in_0_0",
+          "xxv_ethernet_0/gt_loopback_in_0"
+        ]
+      },
+      "gtwiz_reset_rx_datapath_0_0_1": {
+        "ports": [
+          "gtwiz_reset_rx_datapath_0_0",
+          "xxv_ethernet_0/gtwiz_reset_rx_datapath_0"
+        ]
+      },
+      "gtwiz_reset_tx_datapath_0_0_1": {
+        "ports": [
+          "gtwiz_reset_tx_datapath_0_0",
+          "xxv_ethernet_0/gtwiz_reset_tx_datapath_0"
+        ]
+      },
+      "qpllreset_in_0_0_1": {
+        "ports": [
+          "qpllreset_in_0_0",
+          "xxv_ethernet_0/qpllreset_in_0"
+        ]
+      },
+      "rx_core_clk_0_0_1": {
+        "ports": [
+          "rx_core_clk_0_0",
+          "xxv_ethernet_0/rx_core_clk_0"
+        ]
+      },
+      "rx_reset_0_0_1": {
+        "ports": [
+          "rx_reset_0_0",
+          "xxv_ethernet_0/rx_reset_0"
+        ]
+      },
+      "rxoutclksel_in_0_0_1": {
+        "ports": [
+          "rxoutclksel_in_0_0",
+          "xxv_ethernet_0/rxoutclksel_in_0"
+        ]
+      },
+      "sys_reset_0_1": {
+        "ports": [
+          "sys_reset_0",
+          "xxv_ethernet_0/sys_reset"
+        ]
+      },
+      "tx_preamblein_0_0_1": {
+        "ports": [
+          "tx_preamblein_0_0",
+          "xxv_ethernet_0/tx_preamblein_0"
+        ]
+      },
+      "tx_reset_0_0_1": {
+        "ports": [
+          "tx_reset_0_0",
+          "xxv_ethernet_0/tx_reset_0"
+        ]
+      },
+      "txoutclksel_in_0_0_1": {
+        "ports": [
+          "txoutclksel_in_0_0",
+          "xxv_ethernet_0/txoutclksel_in_0"
+        ]
+      },
+      "xxv_ethernet_0_gt_refclk_out": {
+        "ports": [
+          "xxv_ethernet_0/gt_refclk_out",
+          "gt_refclk_out_0"
+        ]
+      },
+      "xxv_ethernet_0_gtpowergood_out_0": {
+        "ports": [
+          "xxv_ethernet_0/gtpowergood_out_0",
+          "gtpowergood_out_0_0"
+        ]
+      },
+      "xxv_ethernet_0_rx_clk_out_0": {
+        "ports": [
+          "xxv_ethernet_0/rx_clk_out_0",
+          "rx_clk_out_0_0"
+        ]
+      },
+      "xxv_ethernet_0_rx_period_ns_0": {
+        "ports": [
+          "xxv_ethernet_0/rx_period_ns_0",
+          "rx_period_ns_0_0"
+        ]
+      },
+      "xxv_ethernet_0_rx_preambleout_0": {
+        "ports": [
+          "xxv_ethernet_0/rx_preambleout_0",
+          "rx_preambleout_0_0"
+        ]
+      },
+      "xxv_ethernet_0_rxrecclkout_0": {
+        "ports": [
+          "xxv_ethernet_0/rxrecclkout_0",
+          "rxrecclkout_0_0"
+        ]
+      },
+      "xxv_ethernet_0_stat_rx_status_0": {
+        "ports": [
+          "xxv_ethernet_0/stat_rx_status_0",
+          "stat_rx_status_0_0"
+        ]
+      },
+      "xxv_ethernet_0_tx_clk_out_0": {
+        "ports": [
+          "xxv_ethernet_0/tx_clk_out_0",
+          "tx_clk_out_0_0"
+        ]
+      },
+      "xxv_ethernet_0_tx_period_ns_0": {
+        "ports": [
+          "xxv_ethernet_0/tx_period_ns_0",
+          "tx_period_ns_0_0"
+        ]
+      },
+      "xxv_ethernet_0_tx_unfout_0": {
+        "ports": [
+          "xxv_ethernet_0/tx_unfout_0",
+          "tx_unfout_0_0"
+        ]
+      },
+      "xxv_ethernet_0_user_rx_reset_0": {
+        "ports": [
+          "xxv_ethernet_0/user_rx_reset_0",
+          "user_rx_reset_0_0"
+        ]
+      },
+      "xxv_ethernet_0_user_tx_reset_0": {
+        "ports": [
+          "xxv_ethernet_0/user_tx_reset_0",
+          "user_tx_reset_0_0"
+        ]
+      }
+    }
+  }
+}

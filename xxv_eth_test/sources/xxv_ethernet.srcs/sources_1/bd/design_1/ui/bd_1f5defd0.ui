@@ -1,0 +1,85 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.9875",
+   "Default View_TopLeft":"-663,-31",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port axis_rx_0_0 -pg 1 -lvl 2 -x 510 -y -30 -defaultsOSRD
+preplace port axis_tx_0_0 -pg 1 -lvl 0 -x -380 -y -30 -defaultsOSRD
+preplace port ctl_rx_0_0 -pg 1 -lvl 0 -x -380 -y 30 -defaultsOSRD
+preplace port ctl_tx_0_0 -pg 1 -lvl 0 -x -380 -y 10 -defaultsOSRD
+preplace port gt_ref_clk_0 -pg 1 -lvl 0 -x -380 -y -70 -defaultsOSRD
+preplace port gt_rx_0 -pg 1 -lvl 0 -x -380 -y -50 -defaultsOSRD
+preplace port gt_tx_0 -pg 1 -lvl 2 -x 510 -y -50 -defaultsOSRD
+preplace port ptp_2step_ctl_if_0_0 -pg 1 -lvl 0 -x -380 -y 50 -defaultsOSRD
+preplace port ptp_2step_usrif_0_0 -pg 1 -lvl 0 -x -380 -y -10 -defaultsOSRD
+preplace port ptp_stat_if_0_0 -pg 1 -lvl 2 -x 510 -y 30 -defaultsOSRD
+preplace port stat_rx_0_0 -pg 1 -lvl 2 -x 510 -y 10 -defaultsOSRD
+preplace port stat_tx_0_0 -pg 1 -lvl 2 -x 510 -y -10 -defaultsOSRD
+preplace port port-id_dclk_0 -pg 1 -lvl 0 -x -380 -y 190 -defaultsOSRD
+preplace port port-id_gt_refclk_out_0 -pg 1 -lvl 2 -x 510 -y 110 -defaultsOSRD
+preplace port port-id_gtpowergood_out_0_0 -pg 1 -lvl 2 -x 510 -y 130 -defaultsOSRD
+preplace port port-id_gtwiz_reset_rx_datapath_0_0 -pg 1 -lvl 0 -x -380 -y 150 -defaultsOSRD
+preplace port port-id_gtwiz_reset_tx_datapath_0_0 -pg 1 -lvl 0 -x -380 -y 130 -defaultsOSRD
+preplace port port-id_qpllreset_in_0_0 -pg 1 -lvl 0 -x -380 -y 290 -defaultsOSRD
+preplace port port-id_rx_clk_out_0_0 -pg 1 -lvl 2 -x 510 -y 90 -defaultsOSRD
+preplace port port-id_rx_core_clk_0_0 -pg 1 -lvl 0 -x -380 -y 70 -defaultsOSRD
+preplace port port-id_rx_reset_0_0 -pg 1 -lvl 0 -x -380 -y 210 -defaultsOSRD
+preplace port port-id_rxrecclkout_0_0 -pg 1 -lvl 2 -x 510 -y 50 -defaultsOSRD
+preplace port port-id_stat_rx_status_0_0 -pg 1 -lvl 2 -x 510 -y 170 -defaultsOSRD
+preplace port port-id_sys_reset_0 -pg 1 -lvl 0 -x -380 -y 170 -defaultsOSRD
+preplace port port-id_tx_clk_out_0_0 -pg 1 -lvl 2 -x 510 -y 70 -defaultsOSRD
+preplace port port-id_tx_reset_0_0 -pg 1 -lvl 0 -x -380 -y 230 -defaultsOSRD
+preplace port port-id_tx_unfout_0_0 -pg 1 -lvl 2 -x 510 -y 250 -defaultsOSRD
+preplace port port-id_user_rx_reset_0_0 -pg 1 -lvl 2 -x 510 -y 150 -defaultsOSRD
+preplace port port-id_user_tx_reset_0_0 -pg 1 -lvl 2 -x 510 -y 230 -defaultsOSRD
+preplace portBus gt_loopback_in_0_0 -pg 1 -lvl 0 -x -380 -y 270 -defaultsOSRD
+preplace portBus rx_period_ns_0_0 -pg 1 -lvl 2 -x 510 -y 210 -defaultsOSRD
+preplace portBus rx_preambleout_0_0 -pg 1 -lvl 2 -x 510 -y 270 -defaultsOSRD
+preplace portBus rxoutclksel_in_0_0 -pg 1 -lvl 0 -x -380 -y 110 -defaultsOSRD
+preplace portBus tx_period_ns_0_0 -pg 1 -lvl 2 -x 510 -y 190 -defaultsOSRD
+preplace portBus tx_preamblein_0_0 -pg 1 -lvl 0 -x -380 -y 250 -defaultsOSRD
+preplace portBus txoutclksel_in_0_0 -pg 1 -lvl 0 -x -380 -y 90 -defaultsOSRD
+preplace inst xxv_ethernet_0 -pg 1 -lvl 1 -x 120 -y 190 -defaultsOSRD
+preplace netloc dclk_0_1 1 0 1 -310J 190n
+preplace netloc gt_loopback_in_0_0_1 1 0 1 -350J 270n
+preplace netloc xxv_ethernet_0_gt_refclk_out 1 1 1 410 110n
+preplace netloc xxv_ethernet_0_gtpowergood_out_0 1 1 1 420 130n
+preplace netloc gtwiz_reset_rx_datapath_0_0_1 1 0 1 -290J 150n
+preplace netloc gtwiz_reset_tx_datapath_0_0_1 1 0 1 -280J 130n
+preplace netloc qpllreset_in_0_0_1 1 0 1 -360J 290n
+preplace netloc xxv_ethernet_0_rx_clk_out_0 1 1 1 400 90n
+preplace netloc rx_core_clk_0_0_1 1 0 1 -250J 70n
+preplace netloc xxv_ethernet_0_rx_period_ns_0 1 1 1 460 210n
+preplace netloc xxv_ethernet_0_rx_preambleout_0 1 1 1 490 270n
+preplace netloc rx_reset_0_0_1 1 0 1 -320J 210n
+preplace netloc rxoutclksel_in_0_0_1 1 0 1 -270J 110n
+preplace netloc xxv_ethernet_0_rxrecclkout_0 1 1 1 380 50n
+preplace netloc xxv_ethernet_0_stat_rx_status_0 1 1 1 440 170n
+preplace netloc sys_reset_0_1 1 0 1 -300J 170n
+preplace netloc xxv_ethernet_0_tx_clk_out_0 1 1 1 390 70n
+preplace netloc xxv_ethernet_0_tx_period_ns_0 1 1 1 450 190n
+preplace netloc tx_preamblein_0_0_1 1 0 1 -340J 250n
+preplace netloc tx_reset_0_0_1 1 0 1 -330J 230n
+preplace netloc xxv_ethernet_0_tx_unfout_0 1 1 1 480 250n
+preplace netloc txoutclksel_in_0_0_1 1 0 1 -260J 90n
+preplace netloc xxv_ethernet_0_user_rx_reset_0 1 1 1 430 150n
+preplace netloc xxv_ethernet_0_user_tx_reset_0 1 1 1 470 230n
+preplace netloc xxv_ethernet_0_axis_rx_0 1 1 1 340 -30n
+preplace netloc axis_tx_0_0_1 1 0 1 -220J -30n
+preplace netloc ctl_rx_0_0_1 1 0 1 -230J 30n
+preplace netloc ctl_tx_0_0_1 1 0 1 -220J 10n
+preplace netloc gt_ref_clk_0_1 1 0 1 -220J -70n
+preplace netloc gt_rx_0_1 1 0 1 -220J -50n
+preplace netloc xxv_ethernet_0_gt_tx 1 1 1 330 -50n
+preplace netloc ptp_2step_ctl_if_0_0_1 1 0 1 -240J 50n
+preplace netloc ptp_2step_usrif_0_0_1 1 0 1 -220J -10n
+preplace netloc xxv_ethernet_0_ptp_stat_if_0 1 1 1 370 30n
+preplace netloc xxv_ethernet_0_stat_rx_0 1 1 1 360 10n
+preplace netloc xxv_ethernet_0_stat_tx_0 1 1 1 350 -10n
+levelinfo -pg 1 -380 120 510
+pagesize -pg 1 -db -bbox -sgen -620 -130 730 1230
+"
+}
+
